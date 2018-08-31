@@ -1,0 +1,29 @@
+{
+  "name": "addressbook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brittanywm/addressbook.git"
+  },
+  "author": "Brittany Miltenberger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brittanywm/addressbook/issues"
+  },
+  "homepage": "https://github.com/brittanywm/addressbook#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.12"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

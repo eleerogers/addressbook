@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Address Book</title>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+  
+</head>
+
+<body>
+  <h1>Address Book</h1>
+  <div id='form-submission'>
+    <form action="/addressbook" method="POST">
+      First Name:
+      <input type="text" name="firstName">
+      Last Name:
+      <input type="text" name="lastName">
+      Phone:
+      <input type="text" name="phone">
+      Address:
+      <input type="text" name="address">
+      City:
+      <input type="text" name="city">
+      State:
+      <input type="text" name="state">
+      Zipcode:
+      <input type="text" name="zipcode">
+      <input type="submit" value="Submit">
+    </form> 
+  </div>
+  <div id="address-book">
+    <div id="people">
+      <div class="person">Rick</div>
+      <div class="person">Morty</div>
+      <div class="person">Summer</div>
+    </div>
+
+    <div id='address'>
+      <span class='firstName'>Rick</span><span class='lastName'>Smith</span>
+      <br>
+      <span class='phone'>111-111-1111</span>
+      <br>
+      <span class='address'>3294 Madison Ave</span>
+      <br>
+      <span class='city'>New York</span><span>, </span>
+      <span class='state'>NY</span><span>, </span>
+      <span class='zipcode'>10001</span>
+    </div>
+  </div>
+  <!-- <script src="js/scripts.js"></script> -->
+</body>
+</html>

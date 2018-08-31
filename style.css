@@ -1,0 +1,28 @@
+#people {
+  float: left;
+  border: 1px solid black;
+  padding: 10px;
+  width: 160px;
+  margin-right: 20px;
+}
+
+#address {
+  float: left;
+  border: 1px solid black;
+  padding: 10px;
+  width: 400px;
+}
+
+.person {
+  border-bottom: 1px solid black;
+  padding: 10px 30px 10px 10px;
+}
+
+form {
+  padding: 10px 10px 30px 10px;
+}
+
+#form-submission {
+  border: 1px solid black;
+  margin-bottom: 30px;
+}
