@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 const path = require('path');
 const mongoose = require('mongoose');
 
+
 const People = require('./controllers/PeopleController');
 
 // Create connection to Mongo DB via Mongoose
@@ -19,15 +20,11 @@ const PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use('/static', express.static(path.join(__dirname, 'public')));
+// Use static point client (so CSS will load)
+app.use(express.static('client'))
 
-app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html')
-  //res.send('Hello Brit');
-});
-
-app.get('/style.css', function(req, res) {
-  res.sendFile(__dirname + "/" + "style.css");
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/../client' + '/index.html'));
 });
 
 // Get all people

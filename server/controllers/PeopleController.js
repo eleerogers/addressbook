@@ -1,11 +1,7 @@
 const { Person } = require('../models/Person');
 
-//controllers
-// functions for accessing the DB
-// setup query function - useful!
-// use promises here
-
 //CRUD (Create, Read, Update, Delete)
+// use promises here
 
 const PeopleController = {
 
