@@ -25,7 +25,7 @@ const PeopleController = {
 
     newPerson.firstname = req.body.firstname;
     newPerson.lastname = req.body.lastname;
-    newPerson.phone = req.body.lastname;
+    newPerson.phone = req.body.phone;
     newPerson.address = req.body.address;
     newPerson.city = req.body.city;
     newPerson.state = req.body.city;
@@ -89,7 +89,6 @@ const PeopleController = {
       }
     });
   }
-
 }
 
 module.exports = PeopleController;
