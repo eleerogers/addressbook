@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ----------------------------------------- */
 
   populatePeople();
+  displayPersonInfo()
 
   // Populate list of people in Address Book
   function populatePeople() {
@@ -59,7 +60,13 @@ function addPersonToDB(){
   .catch(err => console.log('error ', err));
 }
 
-
+function displayPersonInfo(){
+  //loop thru array of people on left
+  //for each, make fetch request to DB and then display on right
+  //const personClassDivs = document.getElementsByClassName("person");
+  // for each link clicked, make fetch request to find individual person
+  //May be be better to generate this requests on link load.
+}
 
 // function linkToInfo(){
 //   let test = document.getElementById
